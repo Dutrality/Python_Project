@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://select2.github.io/select2-bootstrap-theme/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://select2.github.io/select2-bootstrap-theme/css/select2-bootstrap.css">
+<style type="text/css">
+.container {
+  border-radius: 10px;
+  width: 25%;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+</style>
+<title>Housing Price Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <div class="userform">
+            <form method="POST" action="/forecast">
+            <h1 align="center" style="font-variant: small-caps">Housing Price Prediction</h1><br>
+        <div class="form-group">
+            <input id="default" type="text" class="form-control" placeholder="BEDROOMS" name="bedrooms" required autofocus>
+            <input id="default" type="text" class="form-control" placeholder="BATHROOMS" name="bathrooms" required>
+            <input id="default" type="text" class="form-control" placeholder="SQFT_LOT" name="sqft-lot" required>
+            <input id="default" type="text" class="form-control" placeholder="SQFT_BASEMENT" name="sqft-basement" required>
+            <input id="default" type="text" class="form-control" placeholder="FLOORS" name="floors" required>
+            <input id="default" type="text" class="form-control" placeholder="WATERFRONT" name="waterfront" required>            
+            <input id="default" type="text" class="form-control" placeholder="AGE" name="age" required>            
+            <input id="default" type="text" class="form-control" placeholder="GRADE" name="grade" required>            
+            <input id="default" type="text" class="form-control" placeholder="ZIP_CODE" name="zip-code" required>
+        </div>
+        <div align="center">
+            <button type="submit" class="btn btn-primary" name="data" value="data" style="width: 100%">SUBMIT</button>
+        <br><br>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
